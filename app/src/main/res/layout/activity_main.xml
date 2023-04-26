@@ -8,17 +8,17 @@
     tools:context=".MainActivity" >
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/bt_jugar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginTop="296dp"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toEndOf="@+id/et_nombre"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/botoninicio" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_nuestro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
