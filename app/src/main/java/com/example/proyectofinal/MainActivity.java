@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "debes introducir tu nombre", Toast.LENGTH_SHORT).show();
 
         }else{
-            Intent jugar= new Intent(this, com.example.proyectoandroidapp.Primernivel.class);
+            Intent jugar= new Intent(this, com.example.proyectofinal.PrimerNivelEuropa.class);
             jugar.putExtra("nombre",et_nombre.getText().toString());
             startActivity(jugar);
 
