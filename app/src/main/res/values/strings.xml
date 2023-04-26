@@ -1,15 +1,19 @@
 <resources>
     <string name="app_name">Proyecto Final</string>
     <string name="et_nombre">Nombre viajero</string>
-    <string name="bt_jugar">viajar</string>
+
     <string name="tv1">Pon tu nombre en el pasaporte y empieza el viaje</string>
     <string name="tv_nuestro">Ivan Jacome y Cristina Sanchez</string>
     <string name="tv_record"></string>
     <string name="iv_vidas"></string>
     <string name="tv_score">visados = 0</string>
-    <string name="bt_opcion1"></string>
-    <string name="bt_opcion2"></string>
-    <string name="bt_opcion3"></string>
+    <string name="rb_opcion1">opcion</string>
+    <string name="rb_opcion2">opcion</string>
+    <string name="rb_opcion3">opcion</string>
     <string name="tv_nombre"></string>
     <string name="iv_banderas">banderas</string>
+    <string name="bt_comprobar">comprobar</string>
+    <string name="tv_invisible"></string>
+    <string name="bt_jugar">juega con las banderas</string>
+
 </resources>

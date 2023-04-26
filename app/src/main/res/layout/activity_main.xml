@@ -7,46 +7,37 @@
     android:background="@drawable/androidpassport"
     tools:context=".MainActivity" >
 
-    <ImageButton
-        android:id="@+id/bt_jugar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="296dp"
-        app:layout_constraintStart_toEndOf="@+id/et_nombre"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/botoninicio" />
-
     <EditText
         android:id="@+id/et_nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="191dp"
+        android:layout_height="51dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="316dp"
         android:background="#CDDC39"
         android:ems="10"
         android:hint="@string/et_nombre"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="60dp"
-        android:text="TextView"
+        android:layout_width="99dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/tv1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tv_record"
+        android:layout_width="128dp"
+        android:layout_height="31dp"
         android:layout_marginStart="64dp"
         android:layout_marginBottom="140dp"
-        android:text="TextView"
+        android:text="@string/tv_record"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -56,7 +47,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Creado por CRIS & CALVI"
+        android:text="@string/tv_nuestro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bt_jugar"
+        android:layout_width="119dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/bt_jugar"
+        android:contextClickable="false"
+        android:onClick="jugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@drawable/botoninicio" />
 </androidx.constraintlayout.widget.ConstraintLayout>

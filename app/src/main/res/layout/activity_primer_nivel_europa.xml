@@ -8,7 +8,7 @@
     tools:context=".PrimerNivelEuropa">
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tv_nivel1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tv_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/tv_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/iv_banderas"
         android:layout_width="155dp"
         android:layout_height="105dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,31 +51,31 @@
         app:srcCompat="@drawable/spain" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="120dp"
-        android:layout_height="129dp"
+        android:id="@+id/respuestas"
+        android:layout_width="138dp"
+        android:layout_height="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintVertical_bias="0.534">
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/rb_opcion1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="@string/rb_opcion1" />
 
         <RadioButton
-            android:id="@+id/radioButton8"
+            android:id="@+id/rb_opcion2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="@string/rb_opcion2" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rb_opcion3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="@string/rb_opcion3" />
     </RadioGroup>
 
     <Button
@@ -84,7 +84,46 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginTop="24dp"
-        android:text="Button"
+        android:text="@string/bt_comprobar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/respuestas" />
+
+    <TextView
+        android:id="@+id/tv_pregunta"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:text="¿que bandera es?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre" />
+
+    <TextView
+        android:id="@+id/tv_nuestro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/tv_nuestro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprobar" />
+
+    <ImageView
+        android:id="@+id/iv_vidas"
+        android:layout_width="149dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_banderas"
+        app:srcCompat="@drawable/tresvidas" />
+
+    <TextView
+        android:id="@+id/tv_invisible"
+        android:layout_width="98dp"
+        android:layout_height="44dp"
+        android:text="@string/tv_invisible"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="182dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
